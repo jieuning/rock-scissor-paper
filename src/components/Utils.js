@@ -12,10 +12,12 @@ export function compareHand(a, b) {
   return 0;
 }
 
+// 1~n까지 랜덤으로 숫자를 반환
 function random(n) {
   return Math.floor(Math.random() * n);
 }
 
+// 가위바위보 중 랜덤으로 반환
 export function generateRandomHand() {
   const idx = random(HANDS.length);
   return HANDS[idx];
