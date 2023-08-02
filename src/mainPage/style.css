@@ -1,0 +1,83 @@
+/* 텍스트 숨기기 */
+.hidden {
+  text-indent: -9999px;
+}
+
+.main-wrap {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+/* 메인 타이틀 */
+.main-title {
+  font-size: 14.6rem;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 5rem;
+  word-break: keep-all;
+}
+
+/* 핸드 아이콘, 애니메이션  */
+.main-hand-icon {
+  width: 24.6rem;
+  height: 24.6rem;
+  background: url(../assets/hand_icon.svg) no-repeat 0 0 / auto 24.6rem;
+  margin-bottom: 8rem;
+  -webkit-animation: hand 2s infinite steps(3);
+  animation: hand 2s infinite steps(3);
+}
+
+@-webkit-keyframes hand {
+  100% {
+    background-position: -73.8rem 0;
+  }
+}
+
+@keyframes hand {
+  100% {
+    background-position: -73.8rem 0;
+  }
+}
+
+/* 게임 시작 버튼 */
+.start-btn {
+  display: block;
+  border: none;
+  padding: 1.6rem 3.6rem;
+  font-size: 4.2rem;
+  border-radius: 50px;
+  color: #fff;
+  background: #6F00FF;
+  cursor: pointer;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  box-shadow: 0 4.2px 2px #5900cc, 0 -4.2px 2px #8500ff;
+}
+
+.start-btn:hover {
+  color: #FFF000;
+}
+
+@media(max-width: 500px) {
+  * {
+    font-size: 55%;
+  }
+
+  /* 메인 타이틀 */
+  .main-title {
+    font-size: 14.6rem;
+    padding: 0 10px;
+    margin: 0;
+    padding-bottom: 5rem;
+    word-break: keep-all;
+  }
+}
